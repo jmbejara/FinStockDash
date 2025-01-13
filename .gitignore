@@ -3,9 +3,11 @@
 
 # Ignore virtual environment folder
 venv/
+.venv/
 
 # Ignore local development configuration files
 .env
+!.env.example
 
 # Ignore sensitive information files
 config.json

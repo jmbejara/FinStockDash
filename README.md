@@ -30,17 +30,18 @@ To run the app locally, follow these steps:
 
 2. Create and activate a virtual environment: <br>
 
-       $ python3 -m venv venv
-       $ source venv/bin/activate
+       $ python3 -m venv .venv
+       $ source .venv/bin/activate
 
 3. Install the required libraries:<br>
 
        $ pip install -r requirements.txt
 
-4. Run the app:
+4. Create a `.env` file with the proper API keys. Use the `.env.example` file as a template.
+
+5. Run the app:
 
        $ streamlit run app.py
-
 
 ## Usage
 

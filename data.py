@@ -7,11 +7,12 @@ import requests
 import pandas as pd
 import numpy as np
 import streamlit as st
+from decouple import config
 
-
-FMP_API_KEY = st.secrets["FMP_API_KEY"] # replace with your Financial Modeling Prep API key
-ALPHA_API_KEY = st.secrets["ALPHA_API_KEY"] # replace with your Alpha Vantage API key
-
+# FMP_API_KEY = st.secrets["FMP_API_KEY"] # replace with your Financial Modeling Prep API key
+# ALPHA_API_KEY = st.secrets["ALPHA_API_KEY"] # replace with your Alpha Vantage API key
+FMP_API_KEY = config('FMP_API_KEY')
+ALPHA_API_KEY = config('ALPHA_API_KEY')
 
 def get_company_info(symbol: str) -> dict:
     """
